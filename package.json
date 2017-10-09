@@ -1,8 +1,8 @@
 {
-  "name": "react-simple-boilerplate",
+  "name": "markdown-previewer",
+  "homepage": "https://vikariusu.github.io/markdown-previewer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vikariusu.github.io/markdown-previewer",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "marked": "^0.3.6",
