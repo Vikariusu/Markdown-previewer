@@ -1,3 +1,28 @@
 body {
-  color: #00796b;
-  font-size: 28px; }
+  color: #282828;
+  font-size: 16px;
+  background-color: #2B2D42; }
+
+.author a {
+  color: #F24333; }
+  .author a:hover {
+    text-decoration: none; }
+
+.title, .author {
+  color: #EDF2F4;
+  text-align: center;
+  margin: 20px; }
+
+.text-editor {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  color: #282828;
+  margin: 0 50px;
+  justify-content: center; }
+
+.result {
+  padding: 10px 30px;
+  margin-left: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px; }

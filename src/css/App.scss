@@ -1,7 +1,41 @@
-$primary-color: #00796b;
-$primary-font-size: 28px;
+$font-color: #282828;
+$primary-font-size: 16px;
+$primary-color: #2B2D42;
+$secondary-color: rgba(255,255,255,0.9);
+$complementary-color: #EDF2F4;
+$links-color: #F24333;
 
 body {
-  color: $primary-color;
+  color: $font-color;
   font-size: $primary-font-size;
+  background-color: $primary-color;
+}
+
+.author a {
+  color: $links-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title, .author {
+  color: $complementary-color;
+  text-align: center;
+  margin: 20px;
+}
+
+.text-editor {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $primary-font-size;
+  color: $font-color;
+  margin: 0 50px;
+  justify-content: center;
+}
+
+.result {
+  padding: 10px 30px;
+  margin-left: 18px;
+  background-color: $secondary-color;
+  border-radius: 3px;
 }

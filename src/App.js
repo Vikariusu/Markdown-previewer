@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/App.css';
+import './css/App.scss';
 import marked from 'marked';
 
 class App extends Component {
@@ -23,8 +24,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <textarea className="text-field" onChange={this.handleChange} value={this.state.text}></textarea>
-        <div dangerouslySetInnerHTML={this.createMarkup()}></div>
+        <h2 className="title">Markdown Previewer</h2>
+        <p className="author">by<a href="https://vikariusu.github.io/"> Vikariusu</a></p>
+        <div className="text-editor">
+          <textarea className="text-field" onChange={this.handleChange} value={this.state.text} rows="9" cols="60" />
+          <div dangerouslySetInnerHTML={this.createMarkup()} className="result"></div>
+        </div>
       </div>
     );
   }
